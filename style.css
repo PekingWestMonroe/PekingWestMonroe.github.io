@@ -1,16 +1,24 @@
 body {
-  background-color:white;
+  background-color:#eee;
 }
-
+h{
+  font-size: 80px;
+  font-weight: bold;
+  background-color: red;
+  color:whitesmoke;
+}
 h1{
-  color: red;
-  /* margin-left:40%;
+  color: rgb(0, 0, 0);
+  /* margin-middle:40%;
   margin-right:60%; */
   font-size:x-large;
   
 }
+.info{
+  text-align:center;
+}
 .collapsible {
-  background-color: #eee;
+  background-color: rgb(226, 226, 226);
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -18,18 +26,50 @@ h1{
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.collapsibleTITLE {
+  background-color:  rgb(226, 226, 226);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: middle;
+  outline: none;
+  font-size: 30px;
+  font-weight: 900;
+}
+.collapsibleSPICY {
+  background-color: rgb(226, 226, 226);
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+.active {
+  background-color: rgb(177, 250, 159);
+}
+.collapsible:hover,.collapsibleSPICY:hover,.collapsibleTITLE:hover{
   background-color: #ccc;
 }
-
 /* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+.center{
+  text-align: center;
+  border: 3px solid red;
+  background-color: red;
 }
