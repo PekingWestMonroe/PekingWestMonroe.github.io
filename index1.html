@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="style.css">
+
+<h1>Menu of Peking West Monroe</h1>
+<style>
+#tsopicsection{
+  width:100%;
+  
+}
+
+</style>
+<h2>412 Thomas Rd, West Monroe, LA 71292</h2>
+<button type="button" class="collapsible">Chicken</button>
+<div class="content">
+  <!-- <p>TSO CHICKEN</p> -->
+  <button type="button" class ="collapsible" 
+  <!-- <button onClick="showTSO()">TSO CHICKEN</button> -->
+  <div id="tsopicsection" display ="none"><img id="tsopic" src= "tso.png" "></div>
+  <p>ORANGE CHICKEN</p>
+</div>
+<button type="button" class="collapsible" onclick ="showTSO()">House Special</button>
+<div class="content">
+  <p>something1</p>
+  <p>something2</p>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    function showTSO(){
+      
+      var x = document.getElementById("tsopicsection")
+      if(x.style.display ==="none")
+      {
+        x.style.display = "block";
+      }
+      else{
+        x.sytle.display = "none";
+      }
+    }
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+    <!-- <script type = "text/javascript">
+    
+    document.getElementById("bigpic").style.visibility='visible';    
+    setTimeout(() => {
+      
+    }, timeout);
+    </script> -->
+</html>
