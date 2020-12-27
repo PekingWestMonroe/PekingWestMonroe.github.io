@@ -73,7 +73,7 @@ h1{
   
 }
 .collapsible:hover,.collapsibleSPICY:hover,.collapsibleTITLE:hover{
-  background-color: #ccc;
+  background-color: rgb(167, 248, 255);
 }
 /* Style the collapsible content. Note: hidden by default */
 .content {
