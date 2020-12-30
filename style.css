@@ -127,3 +127,7 @@ img{
   max-width: height 100vh;
   margin:auto;
 }
+mark.red{
+  color:red;
+  background-color: #eee;
+}
